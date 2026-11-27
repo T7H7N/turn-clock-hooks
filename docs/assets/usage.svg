@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480" viewBox="0 0 860 480" role="img" aria-labelledby="title desc" xml:lang="en"><title id="title">Read the turn clock response in PowerShell</title><desc id="desc">A PostToolBatch payload is piped to turn-clock/hook.py. PowerShell prints the additionalContext field. It reports the local time and UTC without repeating the seven-day prompt preview. The example uses UTC.</desc>
+<rect x="0" y="0" width="860" height="1300" fill="#f6f5f1" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="8" height="1300" fill="#172529" stroke="none" stroke-width="1"/>
+<line x1="28" y1="53" x2="834" y2="53" stroke="#172529" stroke-width="1"/>
+<text x="28" y="36" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#172529" letter-spacing="1.2">TURN CLOCK HOOKS  /  POWERSHELL</text>
+<text x="28" y="96" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="400" fill="#172529">Read the clock after a batch</text>
+<text x="30" y="126" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#486065">A PostToolBatch event returns the clock in additionalContext.</text>
+<rect x="28" y="151" width="804" height="257" fill="#192c3d" stroke="none" stroke-width="1"/>
+<rect x="28" y="151" width="5" height="257" fill="#88aecd" stroke="none" stroke-width="1"/>
+<text x="49" y="191" font-family="Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="400" fill="#eaf0f5">PS&gt; $eventJson = '{"hook_event_name":"PostToolBatch"}'</text>
+<text x="49" y="226" font-family="Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="400" fill="#eaf0f5">PS&gt; $reply = $eventJson | python -I -B turn-clock/hook.py</text>
+<text x="49" y="261" font-family="Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="400" fill="#eaf0f5">PS&gt; ($reply | ConvertFrom-Json).hookSpecificOutput.additionalContext</text>
+<line x1="50" y1="287" x2="807" y2="287" stroke="#48627b" stroke-width="1"/>
+<text x="50" y="332" font-family="Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="700" fill="#b2dcff">Tool batch ended: 2026-11-27T13:12:17+00:00 (Fri)</text>
+<text x="50" y="366" font-family="Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="700" fill="#b2dcff">| UTC: 2026-11-27T13:12:17Z</text>
+<text x="30" y="449" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#486065">The seven-day calendar appears on prompt submission.</text>
+</svg>

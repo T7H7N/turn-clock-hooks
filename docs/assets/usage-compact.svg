@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="605" viewBox="0 0 390 605" role="img" aria-labelledby="title desc" xml:lang="en"><title id="title">Read the clock after a batch</title><desc id="desc">PS&gt; $eventJson = '{"hook_event_name":"PostToolBatch"}'. PS&gt; $reply = $eventJson | python -I -B turn-clock/hook.py. PS&gt; ($reply | ConvertFrom-Json).hookSpecificOutput.additionalContext. Output: Tool batch ended: 2026-11-27T13:12:17+00:00 (Fri) | UTC: 2026-11-27T13:12:17Z.</desc><rect width="390" height="605" fill="#f6f5f1"/><rect width="5" height="605" fill="#172529"/><path d="M17 44H374" stroke="#172529"/>
+<text x="17" y="30" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" fill="#172529" font-weight="700">TURN CLOCK HOOKS  /  POWERSHELL</text>
+<text x="17" y="86" font-family="Georgia, serif" font-size="30" fill="#172529">Read the clock</text>
+<text x="17" y="119" font-family="Georgia, serif" font-size="30" fill="#172529">after a batch</text>
+<text x="17" y="150" font-family="Arial, sans-serif" font-size="16" fill="#486065">A PostToolBatch event returns the clock</text>
+<text x="17" y="171" font-family="Arial, sans-serif" font-size="16" fill="#486065">in additionalContext.</text>
+<rect x="13" y="192" width="364" height="334" fill="#192c3d"/><rect x="13" y="192" width="4" height="334" fill="#88aecd"/>
+<text x="24" y="222" font-family="Consolas, 'Liberation Mono', monospace" font-size="15" fill="#edf4ed">PS&gt; $eventJson =</text>
+<text x="39" y="243" font-family="Consolas, 'Liberation Mono', monospace" font-size="15" fill="#edf4ed">'{"hook_event_name":"PostToolBatch"}'</text>
+<text x="24" y="277" font-family="Consolas, 'Liberation Mono', monospace" font-size="15" fill="#edf4ed">PS&gt; $reply = $eventJson |</text>
+<text x="39" y="298" font-family="Consolas, 'Liberation Mono', monospace" font-size="15" fill="#edf4ed">python -I -B turn-clock/hook.py</text>
+<text x="24" y="332" font-family="Consolas, 'Liberation Mono', monospace" font-size="15" fill="#edf4ed">PS&gt; ($reply | ConvertFrom-Json)</text>
+<text x="39" y="353" font-family="Consolas, 'Liberation Mono', monospace" font-size="15" fill="#edf4ed">.hookSpecificOutput.additionalContext</text>
+<path d="M27 385H363" stroke="#48627b"/>
+<text x="24" y="421" font-family="Consolas, 'Liberation Mono', monospace" font-size="18" fill="#b2dcff" font-weight="700">Tool batch ended:</text>
+<text x="24" y="451" font-family="Consolas, 'Liberation Mono', monospace" font-size="18" fill="#b2dcff" font-weight="700">2026-11-27T13:12:17+00:00 (Fri)</text>
+<text x="24" y="490" font-family="Consolas, 'Liberation Mono', monospace" font-size="18" fill="#b2dcff" font-weight="700">| UTC: 2026-11-27T13:12:17Z</text>
+<text x="17" y="559" font-family="Arial, sans-serif" font-size="16" fill="#486065">The seven-day calendar appears</text>
+<text x="17" y="580" font-family="Arial, sans-serif" font-size="16" fill="#486065">on prompt submission.</text>
+</svg>

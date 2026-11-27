@@ -1,21 +1,33 @@
-# ![Turn clock and optional command hooks](docs/assets/banner.svg)
+<h1><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner.svg">
+  <img src="docs/assets/banner-light.svg" alt="Turn clock and optional command hooks">
+</picture></h1>
 
 Put current time into the conversation and choose checks for individual tool calls.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-386383?style=flat)](LICENSE) ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-386383?style=flat) ![Dependencies: standard library](https://img.shields.io/badge/dependencies-stdlib-386383?style=flat) [![Tests on main](https://img.shields.io/github/actions/workflow/status/T7H7N/turn-clock-hooks/tests.yml?branch=main&label=tests&style=flat)](https://github.com/T7H7N/turn-clock-hooks/actions/workflows/tests.yml)
 
+**[Get started](#install)**　·　English · [한국어](README.ko.md)
+
 ### What it solves
 
-- Preview the next seven dates and weekdays at prompt time.
-- Refresh the clock when a tool batch ends on a supported host.
-- Choose pre-use checks and post-write advisories independently.
+<table>
+<tr>
+  <td width="33%" valign="top"><img src="docs/assets/feature-1.svg" width="30" alt=""><br><strong>Date preview</strong><br>Preview the next seven dates and weekdays at prompt time.</td>
+  <td width="33%" valign="top"><img src="docs/assets/feature-2.svg" width="30" alt=""><br><strong>Clock refresh</strong><br>Refresh the clock when a tool batch ends on a supported host.</td>
+  <td width="33%" valign="top"><img src="docs/assets/feature-3.svg" width="30" alt=""><br><strong>Optional checks</strong><br>Choose pre-use checks and post-write advisories independently.</td>
+</tr>
+</table>
 
 <picture>
   <source media="(max-width: 600px)" srcset="docs/assets/workflow-compact.svg">
   <img src="docs/assets/workflow.svg" alt="Prompt and tool-batch events feed the turn clock, while five other hooks check commands, reads, and writes.">
 </picture>
 
-**[Get started](#install)**　·　English · [한국어](README.ko.md)
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/usage-compact.svg">
+  <img src="docs/assets/usage.svg" alt="Terminal example for the hook collection.">
+</picture>
 
 Start with the turn clock to give the assistant a current timestamp at each prompt and after tool batches. Add any of the five checks that suit your project. Each folder runs independently with Python 3.9 or later and the standard library.
 
