@@ -1,6 +1,21 @@
-# Turn clock and optional command hooks
+# ![Turn clock and optional command hooks](docs/assets/banner.svg)
 
-English | [한국어](README.ko.md)
+Put current time into the conversation and choose checks for individual tool calls.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-386383?style=flat)](LICENSE) ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-386383?style=flat) ![Dependencies: standard library](https://img.shields.io/badge/dependencies-stdlib-386383?style=flat) [![Tests on main](https://img.shields.io/github/actions/workflow/status/T7H7N/turn-clock-hooks/tests.yml?branch=main&label=tests&style=flat)](https://github.com/T7H7N/turn-clock-hooks/actions/workflows/tests.yml)
+
+### What it solves
+
+- Preview the next seven dates and weekdays at prompt time.
+- Refresh the clock when a tool batch ends on a supported host.
+- Choose pre-use checks and post-write advisories independently.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/workflow-compact.svg">
+  <img src="docs/assets/workflow.svg" alt="Prompt and tool-batch events feed the turn clock, while five other hooks check commands, reads, and writes.">
+</picture>
+
+**[Get started](#install)**　·　English · [한국어](README.ko.md)
 
 Start with the turn clock to give the assistant a current timestamp at each prompt and after tool batches. Add any of the five checks that suit your project. Each folder runs independently with Python 3.9 or later and the standard library.
 

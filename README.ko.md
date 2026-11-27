@@ -1,6 +1,23 @@
-# 턴 시계와 선택형 명령 훅
+# ![턴 시계와 선택형 명령 훅](docs/assets/banner.svg)
 
-[English](README.md) | 한국어
+대화에 현재 시각을 넣고, 도구별 검사 다섯 가지 중 필요한 것만 고릅니다.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-386383?style=flat)](LICENSE) ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-386383?style=flat) ![Dependencies: standard library](https://img.shields.io/badge/dependencies-stdlib-386383?style=flat) [![Tests on main](https://img.shields.io/github/actions/workflow/status/T7H7N/turn-clock-hooks/tests.yml?branch=main&label=tests&style=flat)](https://github.com/T7H7N/turn-clock-hooks/actions/workflows/tests.yml)
+
+### 무엇을 해결하나요?
+
+- 사용자 입력 때 다음 7일의 날짜와 요일을 보여줍니다.
+- 호스트가 지원하면 도구 실행 묶음이 끝날 때 시각을 갱신합니다.
+- 도구 실행 전 검사와 쓰기 후 안내를 필요한 만큼 선택합니다.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/workflow-compact.svg">
+  <img src="docs/assets/workflow.svg" alt="시계는 입력·도구 묶음 종료 시각을 알려 주고, 선택형 훅은 실행 전 세 가지 검사와 쓰기 후 두 가지 안내를 맡습니다.">
+</picture>
+
+시계는 입력·도구 묶음 종료 시각을 알려 주고, 선택형 훅은 실행 전 세 가지 검사와 쓰기 후 두 가지 안내를 맡습니다.
+
+**[바로 시작](#설치)**　·　[English](README.md) · 한국어
 
 턴 시계부터 시작합니다. 프롬프트마다, 그리고 도구 실행 묶음이 끝날 때마다 어시스턴트에게 현재 시각을 알려 줍니다. 여기에 프로젝트에 맞는 검사 다섯 가지 가운데 필요한 것을 더합니다. 폴더마다 따로 실행되며 파이썬 3.9 이상과 표준 라이브러리만 있으면 됩니다.
 
