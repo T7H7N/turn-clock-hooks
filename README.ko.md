@@ -75,3 +75,7 @@ UTC와 영어를 고른 상태에서 프롬프트 훅이 표준 출력에 쓴 JS
 훅 모음, PDF 분류, 세션 간 미결 작업 추적 사례는 [영문 README의 Related work](README.md#related-work)에 있습니다. [턴 시계 안내](turn-clock/README.md#prior-work)에서 비교한 세 구현에서는 7일 미리보기, 도구 묶음 뒤 시각 갱신, 날짜 명령 사용을 함께 제공하는 사례를 확인하지 못했습니다.
 
 훅별 안내 문서는 영어로만 제공됩니다.
+
+## 의견 남기기
+
+써 보셨다면 잘 된 점과 걸린 점을 [Discussions](https://github.com/T7H7N/turn-clock-hooks/discussions)에 남겨 주세요. 버그는 [Issues](https://github.com/T7H7N/turn-clock-hooks/issues)로 알려 주세요.

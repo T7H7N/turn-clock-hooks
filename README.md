@@ -145,3 +145,7 @@ Existing hook collections cover adjacent problems. One combines context usage, u
 A PDF inspector classifies pages to guide OCR decisions. For a scanned document, page classification answers a different question from the file-size check here. [PDF inspection](https://github.com/firecrawl/pdf-inspector)
 
 For work that spans sessions, agent-loom tracks roles and outstanding obligations. Its persistent records can answer which role owes a response after a handoff. The hooks in this collection evaluate individual tool calls. [Roles and obligations](https://github.com/osteele/agent-loom)
+
+## Feedback
+
+Tried it? Share what worked and what got in the way in [Discussions](https://github.com/T7H7N/turn-clock-hooks/discussions). Use [Issues](https://github.com/T7H7N/turn-clock-hooks/issues) for bugs.
