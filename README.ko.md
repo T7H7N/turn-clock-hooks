@@ -44,6 +44,13 @@
 | [마크다운 줄 길이](markdown-lines/README.md) | PostToolUse · Write | 수정 내용을 diff에서 가리는 긴 마크다운 줄 | 파이썬 |
 | [읽기 범위](read-window/README.md) | PreToolUse · Read | 큰 텍스트 파일을 범위 없이 통째로 읽는 경우 | 파이썬 |
 
+## 대상 환경
+
+- **만든 환경.** Claude Code(데스크톱 앱의 Code 탭과 CLI)에서 만들고 써 왔습니다. 훅 시험 여섯 묶음과 `install_check.py`는 CI에서 Ubuntu와 Windows, 파이썬 3.9~3.13으로 실행합니다.
+- **Claude Code 전용인 부분.** `hook.py` 여섯 개는 모두 Claude Code의 훅 규약을 따릅니다. 이벤트 이름(`UserPromptSubmit`, `PostToolBatch`, `PreToolUse`, `PostToolUse`), 도구 이름(`Bash`, `PowerShell`, `Read`, `Write`, `Edit`), 입력 필드 `hook_event_name`·`tool_name`·`tool_input`, 응답 `hookSpecificOutput`, `settings.json`의 `hooks` 등록이 여기에 해당합니다.
+- **에이전트 도구와 무관한 부분.** 각 스크립트는 표준 입력으로 JSON을 받고 표준 출력에 JSON을 쓰는 표준 라이브러리 파이썬 프로그램이어서, 시험은 호스트 없이 실행됩니다. 날짜 명령을 쓰게 하는 규칙은 도구와 상관없는 지침입니다.
+- **들어 있지 않은 것.** Codex를 비롯한 다른 에이전트 도구용 훅이나 어댑터는 이 저장소에 들어 있지 않습니다. 다른 호스트에서는 같은 입력을 보내고 같은 응답을 받아들일 때만 이 스크립트를 쓸 수 있으며, 그 경우는 여기서 시험하지 않았습니다.
+
 ## 턴 시계 출력 예
 
 UTC와 영어를 고른 상태에서 프롬프트 훅이 표준 출력에 쓴 JSON 한 줄입니다. 호스트는 `additionalContext`로 달력을 받습니다.

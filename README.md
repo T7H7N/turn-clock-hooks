@@ -40,6 +40,13 @@ Start with the turn clock to give the assistant a current timestamp at each prom
 | [Markdown lines](markdown-lines/README.md) | PostToolUse · Write | Long Markdown lines that hide edits in diffs | Python |
 | [Read window](read-window/README.md) | PreToolUse · Read | Unbounded reads of large text files | Python |
 
+## Compatibility
+
+- **Built with.** Written and used in Claude Code (the desktop app's Code tab and the CLI). The six hook suites and `install_check.py` run in CI on Ubuntu and Windows with Python 3.9 through 3.13.
+- **Specific to Claude Code.** All six `hook.py` scripts follow its hook contract: the event names (`UserPromptSubmit`, `PostToolBatch`, `PreToolUse`, `PostToolUse`), the tool names (`Bash`, `PowerShell`, `Read`, `Write`, `Edit`), the `hook_event_name`, `tool_name` and `tool_input` payload fields, the `hookSpecificOutput` reply, and registration under `hooks` in `settings.json`.
+- **Independent of the agent tool.** Each script is a standard-library Python program that reads JSON on standard input and writes JSON to standard output, so the tests run without a host. The rule about using a date command is plain guidance.
+- **Not included.** This repository contains no hooks or adapters for Codex or other agent tools. Another host can run these scripts only if it sends the same payload and accepts the same reply, which is not tested here.
+
 ## Example from the turn clock
 
 With UTC and English selected, the prompt hook wrote this JSON line to stdout. The host receives the calendar in `additionalContext`:
